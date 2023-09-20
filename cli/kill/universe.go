@@ -19,6 +19,12 @@ func universe(multiverse *client.Client) *cli.Command {
 }
 
 func killUniverse(multiverse *client.Client) cli.ActionFunc {
+	/**
+	@hope to have call
+	common days 7pm-10pm
+	sunday 4pm-10pm
+	let me know your phone number
+	*/
 	return func(c *cli.Context) (err error) {
 		return multiverse.Universe(c.String("name")).Kill()
 	}
